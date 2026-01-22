@@ -50,7 +50,7 @@
 
 ## 🚀 시작하기
 
-### 1️⃣ 필수 라이브러리 설치
+### 🔹 필수 라이브러리 설치
 
 ```bash
 pip install -r requirements.txt
@@ -58,7 +58,7 @@ pip install -r requirements.txt
 
 ---
 
-### 2️⃣ 환경 변수 설정
+### 🔹 환경 변수 설정
 
 프로젝트 루트 디렉터리에 `.env` 파일을 생성하고 아래 내용을 입력합니다.
 
@@ -103,7 +103,7 @@ MEAL_TYPE=LN
 | 인수 추가 | `C:\Scripts\lunch_bot\main.py` | 실행할 스크립트 |
 | 시작 위치 | `C:\Scripts\lunch_bot\` | `.env` 로드 필수 |
 
-## ️Slack App 설정 (menu_bot.py)
+## 📱 ️Slack App 설정 (menu_bot.py)
 
 Slack App을 사용하여 `/menu` 명령어로 메뉴를 조회할 수 있도록 설정합니다.
 
@@ -133,7 +133,7 @@ SLACK_APP_TOKEN=xapp-XXXXXXXX
 ```
 
 ---
-## 메뉴 파일 생성
+## 🍱 메뉴 파일 생성
 `menu_build.py` 파일을 실행하여 메뉴 데이터를 생성합니다.
 실행 기준의 today, tomorrow 메뉴 json 파일이 생성됩니다.
 자동화 스케줄러에 등록하여 매일 아침 실행되도록 설정할 수 있습니다.
