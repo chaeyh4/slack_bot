@@ -25,7 +25,7 @@ if not SLACK_BOT_TOKEN or not SLACK_APP_TOKEN:
 app = App(token=SLACK_BOT_TOKEN)
 
 # ─────────────────────────────
-# /menu → 버튼만
+# /menu command handler
 # ─────────────────────────────
 @app.command("/menu")
 def show_menu_buttons(ack, body, client):
@@ -63,7 +63,7 @@ def show_menu_buttons(ack, body, client):
         print(traceback.format_exc())
 
 # ─────────────────────────────
-# 버튼 핸들러 + menu_store
+# button handler + menu_store
 # ─────────────────────────────
 def send_menu(client, body, day, meal):
     text = get_menu(day, meal)
@@ -104,5 +104,5 @@ def tomorrow_dinner(ack, body, client):
 # Run
 # ─────────────────────────────
 if __name__ == "__main__":
-    print("\n🚀 MENU BOT STABLE + STORE STARTED")
+    print("\nMENU BOT STABLE + STORE STARTED")
     SocketModeHandler(app, SLACK_APP_TOKEN).start()
